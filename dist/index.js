@@ -40,4 +40,4 @@ app.post("/users", (req, res) => {
 app.get("/users", (_req, res) => {
     return res.status(201).json(users);
 });
-//# sourceMappingURL=server.js.map
+//# sourceMappingURL=index.js.map

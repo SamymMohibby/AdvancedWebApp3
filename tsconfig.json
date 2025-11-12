@@ -1,9 +1,9 @@
 {
-  "include": ["server.ts"],
+  "include": ["src/index.ts"],
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
+    "rootDir": "./src",
     "outDir": "./dist",
 
     // Environment Settings
