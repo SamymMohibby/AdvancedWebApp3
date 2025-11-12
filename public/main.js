@@ -13,7 +13,6 @@ form.addEventListener("submit", async (e) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
     });
-    form.reset()
 })
 
 const userBtn = document.getElementById("getUsers")

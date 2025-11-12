@@ -38,6 +38,6 @@ app.post("/users", (req, res) => {
     return res.json({ message: "User successfully added" });
 });
 app.get("/users", (_req, res) => {
-    return res.status(201).json(users);
+    return res.json(users);
 });
 //# sourceMappingURL=server.js.map
