@@ -1,6 +1,2 @@
-export type TUser = {
-    name: string;
-    email: string;
-};
-export declare const users: TUser[];
+export {};
 //# sourceMappingURL=server.d.ts.map
