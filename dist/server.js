@@ -32,7 +32,7 @@ app.post("/sum", (req, res) => {
     res.json({ sum: sum });
 });
 const users = [];
-app.post("/user", (req, res) => {
+app.post("/postUser", (req, res) => {
     const user = req.body;
     users.push(user);
     res.json({ message: "User added successfully", user });
