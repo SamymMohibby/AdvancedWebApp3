@@ -48,9 +48,10 @@ app.post("/user", (req, res) => {
     const user: TUser = req.body
     users.push(user)
     res.json({message: "User added successfully", user})
-    
+    console.log("post request made")
 })
 
 app.get("/users", (_req: Request, res: Response) => {
   res.json(users);
+  console.log("GET request made")
 });

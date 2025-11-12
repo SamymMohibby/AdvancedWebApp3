@@ -36,8 +36,10 @@ app.post("/user", (req, res) => {
     const user = req.body;
     users.push(user);
     res.json({ message: "User added successfully", user });
+    console.log("post request made");
 });
 app.get("/users", (_req, res) => {
     res.json(users);
+    console.log("GET request made");
 });
 //# sourceMappingURL=server.js.map
