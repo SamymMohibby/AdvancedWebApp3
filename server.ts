@@ -51,5 +51,5 @@ app.post("/users", (req, res) => {
 })
 
 app.get("/users", (_req: Request, res: Response) => {
-  return res.json(users);
+    return res.status(201).json(users);
 });
