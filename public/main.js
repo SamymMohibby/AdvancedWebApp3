@@ -8,7 +8,7 @@ form.addEventListener("submit", async (e) => {
 
     const user = { name, email };
 
-    const res = await fetch("/user", {
+    const res = await fetch("/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),

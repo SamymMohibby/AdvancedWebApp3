@@ -44,14 +44,12 @@ type TUser = {
 
 const users: TUser[] = []
 
-app.post("/postUser", (req, res) => {
+app.post("/users", (req, res) => {
     const user: TUser = req.body
     users.push(user)
-    res.json({message: "User added successfully", user})
-    console.log("post request made")
+    return res.json({ message: "User successfully added" });
 })
 
 app.get("/users", (_req: Request, res: Response) => {
-  res.json(users);
-  console.log("GET request made")
+  return res.json(users);
 });

@@ -32,14 +32,12 @@ app.post("/sum", (req, res) => {
     res.json({ sum: sum });
 });
 const users = [];
-app.post("/postUser", (req, res) => {
+app.post("/users", (req, res) => {
     const user = req.body;
     users.push(user);
-    res.json({ message: "User added successfully", user });
-    console.log("post request made");
+    return res.json({ message: "User successfully added" });
 });
 app.get("/users", (_req, res) => {
-    res.json(users);
-    console.log("GET request made");
+    return res.json(users);
 });
 //# sourceMappingURL=server.js.map
