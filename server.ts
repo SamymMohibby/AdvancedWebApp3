@@ -2,7 +2,7 @@ import express, { Request, Response, Express } from "express";
 import path from "path"
 
 const app: Express = express();
-const port = 3000;
+import port from "./src/index"
 
 app.use(express.static(path.join(__dirname, "../public")))
 app.use(express.json())
@@ -26,7 +26,6 @@ numbers.forEach(x => {
     sum += x;
 });
 
-
 app.post("/sum", (req, res) => {
     let numbers:number[] =  req.body.numbers
     let sum: number = 0;
@@ -37,12 +36,12 @@ app.post("/sum", (req, res) => {
     res.json({sum: sum})
 })
 
-type TUser = {
+export type TUser = {
     name: string,
     email: string
 }
 
-const users: TUser[] = []
+export const users: TUser[] = []
 
 app.post("/users", (req, res) => {
     const user: TUser = req.body
